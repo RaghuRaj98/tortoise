@@ -1,0 +1,22 @@
+
+<div style="text-align: center; border: 1px solid black; width: 50%;margin: auto">
+
+        
+        <br>
+        <input [(ngModel)]='task' type="text" class="text" placeholder="Add Task"><br>
+        
+    
+        <input  type="button" (click)="log()" value="AddTask">
+    </div>
+
+
+<table>
+    
+    <tbody>
+        <tr *ngFor="let taskdata of tasks">
+            <td>{{taskdata}}</td>
+            <td><button type="submit" (click)='deletetask()'>Delete</button></td>
+            
+        </tr>
+    </tbody>
+</table>
